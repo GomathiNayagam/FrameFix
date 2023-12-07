@@ -22,7 +22,7 @@ def create_database(aa, db, threads):
         print(f"  {db} already exists, will reuse\n")
 
 def map_proteins(reads, db, out, threads, mode):
-    if not mode or mode == "ultra-sensitive":
+    if not mode or mode == "fast":
         mode = ""
     else:
         mode = f"--{mode}"
